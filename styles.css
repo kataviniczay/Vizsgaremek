@@ -5,47 +5,74 @@ html{
 body{
     margin: 0;
     padding: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     font-size: 16px;
 }
 
+.arnyek{
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+}
+
 main{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    background-color: rgba(188, 187, 187, 0.672);
+}
+
+.felso_csik{
+    height: 20px;
+    background-color: #78b3d7;
+    width: 100%;
 }
 
 header {
-    background-color: #4382DF;
+    background-color: white;
     text-align: center;
+    padding: 10px;
 }
 
-aside{
+header>h1{
+    color: #78b3d7;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+/* aside{
     background-color: #AACCD6;
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+} */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    gap: 25px;
 }
 
-nav>ul>li>a{
+nav>a{
     text-decoration: none;
-    color: #4382DF;
-    font-size: 2rem;
+    color: #78b3d7;
+    font-size: 1.5rem;
 }
 
-nav>ul>li>a:hover{
+nav>a:hover{
     color: #2459aa;
 }
 
-nav ul{
-    list-style-type: none;
-}
-
 main>section{
-    background-color: #F1F6F5;
+    background-color: white;
+    border-radius: 15px;
     height: 100%;
     width: 80%;
     padding: 20px;
     font-size: 1.25rem;
+    margin: 20px auto;
 }
 
 #image-container{
@@ -54,6 +81,37 @@ main>section{
     background-image: url('img/car3.jpg');
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+    border-radius: 15px;
+}
+
+#image-container>button{
+    width: 200px;
+    height: 50px;
+    font-size: 1.6rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#image-container>button:first-child{
+    background-color: #AEEA94;
+    color: black;
+}
+
+#image-container>button:nth-child(2){
+    background-color: #FFFBCA;
+    color: black;
+}
+
+#image-container>button:hover{
+    background-color: silver;
+    color: white;
 }
 
 main>section>div>img{
@@ -65,10 +123,11 @@ main>section div{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 10px;
+    padding: 10px 0px;
 }
 
 footer{
-    background-color: #4382DF;
+    background-color: white;
     text-align: center;
+    border-top: 10px solid #78b3d7;
 }
