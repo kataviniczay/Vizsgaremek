@@ -131,3 +131,27 @@ footer{
     text-align: center;
     border-top: 10px solid #78b3d7;
 }
+
+#kartyak{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(188, 187, 187, 0.672);
+}
+
+#kartya{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 80%;
+    border-radius: 15px;
+    background-color: white;
+    padding: 10px;
+}
+
+#szagatott_vonal{
+    width: 80%;
+    border-top: 2px grey dashed;
+}
